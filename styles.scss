@@ -1,0 +1,59 @@
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+
+    box-shadow: 0 0 12px 0 grey;
+    width: 300px;
+    padding: 2rem;
+
+    &__count {
+        height: 20vh;
+        display: grid;
+        place-content: center;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+
+}
+
+.btn {
+   padding: .2rem;
+   border: none;
+   outline: 0;
+   cursor: pointer;
+   background-color: gold;
+   margin-left: 1rem;
+   border-radius: .4rem; 
+   user-select: none;   
+}
+
+.btn:hover {
+    box-shadow: 0 0 14px 0 grey;
+}
+
+#count {
+    font-size: 3rem;
+}
